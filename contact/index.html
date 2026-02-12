@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Ferser</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/tailwind.js"></script>
 </head>
-<body>
-    
+
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 text-slate-900 antialiased overflow-x-hidden">
+    <nav
+        class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/70 backdrop-blur-xl border-b border-white/20">
+        <div class="max-w-8xl mx-8 px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2 cursor-pointer">
+                <div class="w-16 h-8 rounded-lg flex items-center justify-start text-blue-800 font-bold text-6xl">
+                    Ferser
+                </div>
+            </div>
+
+            <a href="/"
+                class="flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-5 py-2 rounded-full text-xl font-medium transition-all shadow-sm hover:shadow-md">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                Volver al inicio
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen pt-32 pb-20 flex flex-col items-center overflow-hidden bg-grid-slate-100">
+
+        <div class="blob bg-purple-300 w-96 h-96 rounded-full top-20 right-[-100px] opacity-30"></div>
+        <div class="blob bg-blue-400 w-80 h-80 rounded-full bottom-20 left-[-50px] animation-delay-2000 opacity-30">
+        </div>
+
+        <div class="max-w-6xl w-full mx-auto px-6 relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+                <h1 class="text-5xl md:text-6xl font-black tracking-tighter text-slate-900 mb-6">
+                    Conectemos
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+                        tu visión
+                    </span>
+                </h1>
+                <p class="text-xl text-slate-600 leading-relaxed font-medium">
+                    Estamos listos para escuchar sobre tu proyecto. Elige el canal que prefieras para iniciar la
+                    conversación.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+
+                <div
+                    class="fade-in-up group p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
+                        <i data-lucide="mail" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Correo Electrónico</h3>
+                    <p class="text-slate-500 mb-4 text-sm">Para consultas generales y propuestas detalladas.</p>
+                    <a href="mailto:contacto@ferser.com"
+                        class="text-xl font-semibold text-blue-600 hover:text-blue-700 break-words">
+                        contacto@ferser.com
+                    </a>
+                </div>
+
+                <div class="fade-in-up group p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl hover:shadow-green-500/10 transition-all duration-300 hover:-translate-y-1"
+                    style="transition-delay: 0.1s;">
+                    <div
+                        class="w-14 h-14 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
+                        <i data-lucide="message-circle" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Chat Directo</h3>
+                    <p class="text-slate-500 mb-4 text-sm">Respuesta rápida vía WhatsApp para dudas puntuales.</p>
+                    <a href="#" class="text-xl font-semibold text-slate-800 hover:text-green-600 transition-colors">
+                        +57 322 875 6421
+                    </a>
+                </div>
+
+                <div class="fade-in-up group p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 hover:-translate-y-1"
+                    style="transition-delay: 0.2s;">
+                    <div
+                        class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
+                        <i data-lucide="clock" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Disponibilidad Global</h3>
+                    <p class="text-slate-500 mb-4 text-sm">Somos una startup 100% remota. Operamos de forma asíncrona
+                        para cubrir diferentes zonas horarias.</p>
+                    <div class="text-sm font-semibold text-slate-800 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        Atención Activa (L-V)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-slate-200 bg-white/40 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 flex justify-center items-center">
+            <p class="text-sm text-slate-500">© 2026 Ferser. Ingeniería de Software a la Medida.</p>
+        </div>
+    </footer>
+
+    <script src="/main.js"></script>
 </body>
+
 </html>
